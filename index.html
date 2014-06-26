@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>Poke48</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -17,26 +17,42 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-  <div class="container">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+ 
+  </div>
+    <div class="container">
     <div class="heading">
-      <h1 class="title">2048</h1>
+      <h1 class="title">Poke48</h1> 
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
 
+
     <div class="above-game">
-      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+      <p class="game-intro">Join the tiles and get to the <strong>Pikachu tile!</strong></p>
       <a class="restart-button">New Game</a>
     </div>
+
+    <div clss = "pre-game">
+      
 
     <div class="game-container">
       <div class="game-message">
         <p></p>
         <div class="lower">
+          <a href="http://www.facebook.com/enokynoky" class="learn learn-low">More games by IndieRock3496</a>
 	        <a class="keep-playing-button">Keep going</a>
           <a class="retry-button">Try again</a>
+           <p>
         </div>
       </div>
 
@@ -73,17 +89,28 @@
     </div>
 
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>evolve!</strong>
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    <strong class="important">Credit:</strong> This is a modified version of the <a href="http://gabrielecirulli.github.io/2048/" target="_blank">original game</a> created by Gabriele Cirulli. Images are by  <a href="http://zel-duh.deviantart.com/art/Pikachu-HM-Surf-298250422" target="_blank"> mnrARThone </a> and <a href="http://www.zerochan.net/961068" target="_blank"> mikage_suede</a> 
     </p>
     <hr>
     <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+      <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1401325387.html#_=1401952466038
+      &amp;count=horizontal
+      &amp;counturl=https://twitter.com/IndieRock3496
+      &amp;id=twitter-widget-0
+      &amp;lang=en
+      &amp;original_referer=http%3A%2F%2Fgabrielecirulli.github.io%2F2048%2F
+      &amp;size=m
+      &amp;text=If%20you%20love 2048 game%2C%20then%20you%20should%20play%20Poke48%20%232048game
+      &amp;url=http%3A%2F%2Ffacebook.com%2Fenokynoky&amp;via=IndieRock3496" 
+      class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 107px; height: 20px;"></iframe>
     </p>
-  </div>
+    <p> <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+  </p>
+   
 
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
